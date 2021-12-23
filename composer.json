@@ -1,0 +1,30 @@
+{
+    "name": "iwink/tree",
+    "description": "Tree data structure for PHP",
+    "type": "library",
+    "authors": [
+        {
+            "name": "iWink",
+            "email": "hallo@iwink.nl",
+            "homepage": "https://www.iwink.nl/"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Iwink\\Tree\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Iwink\\Tree\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.4|^8.0"
+    }
+}
