@@ -7,13 +7,13 @@ use Iwink\Tree\Visitor\SerializerVisitor;
 
 /**
  * Unit tests for {@see SerializerVisitor}.
- * @since $ver$
+ * @since 1.0.0
  */
 class SerializerVisitorTest extends VisitorTest
 {
     /**
      * Test case for {@see SerializerVisitor}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testVisitor(): void
     {

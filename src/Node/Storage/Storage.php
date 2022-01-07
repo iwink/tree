@@ -6,34 +6,34 @@ use Iwink\Tree\Node\NodeInterface;
 
 /**
  * A storage for nodes.
- * @since $ver$
+ * @since 1.0.0
  */
 final class Storage implements StorageInterface
 {
     /**
      * The parent node.
-     * @since $ver$
+     * @since 1.0.0
      * @var NodeInterface|null
      */
     private ?NodeInterface $parent = null;
 
     /**
      * The children indexed on their hashes.
-     * @since $ver$
+     * @since 1.0.0
      * @var NodeInterface[]
      */
     private array $children = [];
 
     /**
      * The ordered child hashes.
-     * @since $ver$
+     * @since 1.0.0
      * @var string[]
      */
     private array $order = [];
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      * @return \Generator
      */
     public function all(): iterable
@@ -45,7 +45,7 @@ final class Storage implements StorageInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function push(NodeInterface ...$children): StorageInterface
     {
@@ -62,7 +62,7 @@ final class Storage implements StorageInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function set(int $position, NodeInterface $child): StorageInterface
     {
@@ -81,7 +81,7 @@ final class Storage implements StorageInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function get(int $position): ?NodeInterface
     {
@@ -94,7 +94,7 @@ final class Storage implements StorageInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function delete(int $position): StorageInterface
     {
@@ -105,7 +105,7 @@ final class Storage implements StorageInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function remove(NodeInterface ...$children): StorageInterface
     {
@@ -120,7 +120,7 @@ final class Storage implements StorageInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function setParent(?NodeInterface $parent): StorageInterface
     {
@@ -131,7 +131,7 @@ final class Storage implements StorageInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function getParent(): ?NodeInterface
     {
@@ -140,7 +140,7 @@ final class Storage implements StorageInterface
 
     /**
      * Creates a unique hash for a child.
-     * @since $ver$
+     * @since 1.0.0
      * @param NodeInterface $child The child.
      * @return string The hash.
      */
@@ -151,7 +151,7 @@ final class Storage implements StorageInterface
 
     /**
      * Checks if the child exists in the storage.
-     * @since $ver$
+     * @since 1.0.0
      * @param NodeInterface $child The child.
      * @return bool Whether the child already exists.
      */
@@ -162,7 +162,7 @@ final class Storage implements StorageInterface
 
     /**
      * Stores a child.
-     * @since $ver$
+     * @since 1.0.0
      * @param NodeInterface $child The child.
      */
     private function store(NodeInterface $child): void
@@ -172,7 +172,7 @@ final class Storage implements StorageInterface
 
     /**
      * Clones the storage.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function __clone()
     {
@@ -184,7 +184,7 @@ final class Storage implements StorageInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function count(): int
     {

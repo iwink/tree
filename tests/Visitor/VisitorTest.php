@@ -7,13 +7,13 @@ use Iwink\Tree\Visitor\ArrayVisitor;
 
 /**
  * Base test case for a visitor.
- * @since $ver$
+ * @since 1.0.0
  */
 abstract class VisitorTest extends TestCase
 {
     /**
      * Returns a single serialized node.
-     * @since $ver$
+     * @since 1.0.0
      * @return array The serialized node.
      */
     protected function getSerializedNode(): array
@@ -23,7 +23,7 @@ abstract class VisitorTest extends TestCase
 
     /**
      * Returns a multiple serialized nodes.
-     * @since $ver$
+     * @since 1.0.0
      * @return array The serialized nodes.
      */
     protected function getSerializedNodes(): array
@@ -36,7 +36,7 @@ abstract class VisitorTest extends TestCase
 
     /**
      * Helper method to assert instances of {@see ArrayVisitor}.
-     * @since $ver$
+     * @since 1.0.0
      * @param array $expected The expected result.
      * @param ArrayVisitor $visitor The visitor.
      */

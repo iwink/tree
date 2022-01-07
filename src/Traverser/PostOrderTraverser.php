@@ -6,13 +6,13 @@ use Iwink\Tree\Node\NodeInterface;
 
 /**
  * A post-order tree traverser {@link https://en.wikipedia.org/wiki/Tree_traversal#Post-order_(LRN)}.
- * @since $ver$
+ * @since 1.0.0
  */
 final class PostOrderTraverser extends DepthFirstTraverser
 {
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      * @return \Generator
      */
     protected function doTraverse(NodeInterface $node): iterable

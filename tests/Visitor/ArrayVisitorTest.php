@@ -8,13 +8,13 @@ use Iwink\Tree\Visitor\ArrayVisitor;
 
 /**
  * Unit tests for {@see ArrayVisitor}.
- * @since $ver$
+ * @since 1.0.0
  */
 class ArrayVisitorTest extends VisitorTest
 {
     /**
      * Test case for {@see ArrayVisitor}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testVisitor(): void
     {
@@ -35,13 +35,13 @@ class ArrayVisitorTest extends VisitorTest
 
 /**
  * Concrete implementation of an {@see ArrayVisitor}.
- * @since $ver$
+ * @since 1.0.0
  */
 class ConcreteArrayVisitor extends ArrayVisitor
 {
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     protected function doVisit(NodeInterface $node)
     {

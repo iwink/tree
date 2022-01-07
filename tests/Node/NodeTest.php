@@ -9,13 +9,13 @@ use Iwink\Tree\Visitor\VisitorInterface;
 
 /**
  * Unit tests for {@see Node}.
- * @since $ver$
+ * @since 1.0.0
  */
 class NodeTest extends TestCase
 {
     /**
      * Test case for {@see Node::__construct()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testConstructor(): void
     {
@@ -28,7 +28,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::setValue()} and {@see Node::getValue()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testSetValue(): void
     {
@@ -40,7 +40,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::getChildren()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testGetChildren(): void
     {
@@ -54,7 +54,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::addChild}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testAddChild(): void
     {
@@ -78,7 +78,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::setChild()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testSetChild(): void
     {
@@ -95,7 +95,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::removeChild()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testRemoveChild(): void
     {
@@ -124,7 +124,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::deleteChild()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testDeleteChild(): void
     {
@@ -142,7 +142,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::setParent()} where the node already had a parent.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testSetParentWithOldParent(): void
     {
@@ -159,7 +159,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::setParent()} where the parent is set to Null.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testSetParentNull(): void
     {
@@ -174,7 +174,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::getParent()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testGetParent(): void
     {
@@ -188,7 +188,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::getAncestors()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testGetAncestors(): void
     {
@@ -201,7 +201,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::getSiblings()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testGetSiblings(): void
     {
@@ -219,7 +219,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::isRoot()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testIsRoot(): void
     {
@@ -232,7 +232,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::isLeaf()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testIsLeaf(): void
     {
@@ -245,7 +245,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::getDepth()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testGetDepth(): void
     {
@@ -259,7 +259,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::getHeight()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testGetHeight(): void
     {
@@ -280,7 +280,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::accept()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testAccept(): void
     {
@@ -293,7 +293,7 @@ class NodeTest extends TestCase
 
     /**
      * Test case for {@see Node::__clone()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testClone(): void
     {

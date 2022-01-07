@@ -8,27 +8,27 @@ use Iwink\Tree\Node\Storage\Storage;
 
 /**
  * Unit tests for {@see Storage}.
- * @since $ver$
+ * @since 1.0.0
  */
 class StorageTest extends TestCase
 {
     /**
      * The class under test.
-     * @since $ver$
+     * @since 1.0.0
      * @var Storage
      */
     private $storage;
 
     /**
      * Children used for the test.
-     * @since $ver$
+     * @since 1.0.0
      * @var NodeInterface[]
      */
     private $children = [];
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     protected function setUp(): void
     {
@@ -40,7 +40,7 @@ class StorageTest extends TestCase
 
     /**
      * Test case for {@see Storage::all()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testAll(): void
     {
@@ -49,7 +49,7 @@ class StorageTest extends TestCase
 
     /**
      * Test case for {@see Storage::push()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testPush(): void
     {
@@ -61,7 +61,7 @@ class StorageTest extends TestCase
 
     /**
      * Data provider for {@see self::testSet()}.
-     * @since $ver$
+     * @since 1.0.0
      * @return mixed[] The data.
      */
     public function dataProviderForTestSet(): array
@@ -121,7 +121,7 @@ class StorageTest extends TestCase
 
     /**
      * Test case for {@see Storage::set()}.
-     * @since $ver$
+     * @since 1.0.0
      * @param NodeInterface[] $original Original children.
      * @param int $position The position to set the node.
      * @param NodeInterface $node The node to set.
@@ -139,7 +139,7 @@ class StorageTest extends TestCase
 
     /**
      * Test case for {@see Storage::get()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testGet(): void
     {
@@ -151,7 +151,7 @@ class StorageTest extends TestCase
 
     /**
      * Test case for {@see Storage::delete()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testDelete(): void
     {
@@ -162,7 +162,7 @@ class StorageTest extends TestCase
 
     /**
      * Test case for {@see Storage::remove()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testRemove(): void
     {
@@ -173,7 +173,7 @@ class StorageTest extends TestCase
 
     /**
      * Test case for {@see Storage::setParent()} and {@see Storage::getParent()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testParent(): void
     {
@@ -186,7 +186,7 @@ class StorageTest extends TestCase
 
     /**
      * Test case for {@see Storage::__clone()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testClone(): void
     {
@@ -197,7 +197,7 @@ class StorageTest extends TestCase
 
     /**
      * Helper method to set up a few nodes as children.
-     * @since $ver$
+     * @since 1.0.0
      */
     private function setupChildren(): void
     {

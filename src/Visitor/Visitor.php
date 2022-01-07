@@ -4,13 +4,13 @@ namespace Iwink\Tree\Visitor;
 
 /**
  * Base implementation of a visitor.
- * @since $ver$
+ * @since 1.0.0
  */
 abstract class Visitor implements VisitorInterface
 {
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      * @codeCoverageIgnore
      */
     public function beforeVisiting(): void
@@ -19,7 +19,7 @@ abstract class Visitor implements VisitorInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      * @codeCoverageIgnore
      */
     public function afterVisiting(): void

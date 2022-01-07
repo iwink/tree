@@ -9,48 +9,48 @@ use Iwink\Tree\Visitor\VisitorInterface;
 
 /**
  * A tree data structure.
- * @since $ver$
+ * @since 1.0.0
  */
 interface TreeInterface
 {
     /**
      * Returns the root node of the tree.
-     * @since $ver$
+     * @since 1.0.0
      * @return NodeInterface The root node.
      */
     public function getRoot(): NodeInterface;
 
     /**
      * Returns a clone of the tree.
-     * @since $ver$
+     * @since 1.0.0
      * @return TreeInterface The clone.
      */
     public function clone(): TreeInterface;
 
     /**
      * Does a pre-order traversal of the root node and applies 1 or more visitors to each node.
-     * @since $ver$
+     * @since 1.0.0
      * @param VisitorInterface ...$visitors The visitors.
      */
     public function visitPreOrder(VisitorInterface ...$visitors): void;
 
     /**
      * Does an in-order traversal of the root node and applies 1 or more visitors to each node.
-     * @since $ver$
+     * @since 1.0.0
      * @param VisitorInterface ...$visitors The visitors.
      */
     public function visitInOrder(VisitorInterface ...$visitors): void;
 
     /**
      * Does a post-order traversal of the root node and applies 1 or more visitors to each node.
-     * @since $ver$
+     * @since 1.0.0
      * @param VisitorInterface ...$visitors The visitors.
      */
     public function visitPostOrder(VisitorInterface ...$visitors): void;
 
     /**
      * Does a level-order traversal of the root node and applies 1 or more visitors to each node.
-     * @since $ver$
+     * @since 1.0.0
      * @param VisitorInterface ...$visitors The visitors.
      */
     public function visitLevelOrder(VisitorInterface ...$visitors): void;
@@ -68,7 +68,7 @@ interface TreeInterface
      * The `children` index is optional but when it's present, it should consist out of the <ID>-s of other nodes in the
      * serialized array.
      *
-     * @since $ver$
+     * @since 1.0.0
      * @param array $serialized The serialized array.
      * @param callable|null $converter Optional converter for the value.
      * @param string $node_class The class of the nodes to construct.
@@ -82,7 +82,7 @@ interface TreeInterface
 
     /**
      * Serializes a tree by converting each node to {@see SerializerVisitor::doVisit()} in a pre-order traversal.
-     * @since $ver$
+     * @since 1.0.0
      * @param callable|null $converter Optional converter for the value.
      * @return array The serialized Tree.
      */

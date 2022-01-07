@@ -11,27 +11,27 @@ use Iwink\Tree\Visitor\VisitorInterface;
 
 /**
  * Unit tests for {@see Tree}.
- * @since $ver$
+ * @since 1.0.0
  */
 class TreeTest extends TestCase
 {
     /**
      * A Root node.
-     * @since $ver$
+     * @since 1.0.0
      * @var Node
      */
     private Node $root;
 
     /**
      * The class under test.
-     * @since $ver$
+     * @since 1.0.0
      * @var Tree
      */
     private Tree $tree;
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     protected function setUp(): void
     {
@@ -41,7 +41,7 @@ class TreeTest extends TestCase
 
     /**
      * Test case for {@see Tree::getRoot()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testGetRoot(): void
     {
@@ -50,7 +50,7 @@ class TreeTest extends TestCase
 
     /**
      * Test case for {@see Tree::clone()} and {@see Tree::__clone()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testClone(): void
     {
@@ -62,7 +62,7 @@ class TreeTest extends TestCase
 
     /**
      * Test case for {@see Tree::doVisit}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testDoVisit(): void
     {
@@ -98,7 +98,7 @@ class TreeTest extends TestCase
 
     /**
      * Test case for {@see Tree::fromSerialized()} with an invalid node class.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testFromSerializedInvalidNode(): void
     {
@@ -113,7 +113,7 @@ class TreeTest extends TestCase
 
     /**
      * Data provider for {@see Tree::fromSerialized()}.
-     * @since $ver$
+     * @since 1.0.0
      * @return array The data set.
      */
     public function fromSerializedDataProvider(): array
@@ -147,7 +147,7 @@ class TreeTest extends TestCase
 
     /**
      * Test case for {@see Tree::fromSerialized()}.
-     * @since $ver$
+     * @since 1.0.0
      * @param array $serialized The serialized tree.
      * @param null|callable $converter Optional converter.
      * @param array $expected The expected values.
@@ -164,7 +164,7 @@ class TreeTest extends TestCase
 
     /**
      * Data provider for {@see Tree::serialize()}.
-     * @since $ver$
+     * @since 1.0.0
      * @return array The data set.
      */
     public function serializeDataProvider(): array
@@ -194,7 +194,7 @@ class TreeTest extends TestCase
 
     /**
      * Test case for {@see Tree::serialize()}.
-     * @since $ver$
+     * @since 1.0.0
      * @param array $serialized The serialized tree.
      * @param null|callable $converter Optional converter.
      * @dataProvider serializeDataProvider The data provider.

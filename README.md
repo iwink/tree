@@ -1,5 +1,8 @@
 # iWink Tree
 
+[![License](https://poser.pugx.org/iwink/tree/license.png)](https://packagist.org/packages/iwink/tree)
+[![Tag](https://img.shields.io/github/v/tag/iwink/tree)](https://github.com/iwink/tree/releases)
+
 This component provides a [Tree](https://en.wikipedia.org/wiki/Tree_%28data_structure%29) that can be traversed and 
 modified.
 

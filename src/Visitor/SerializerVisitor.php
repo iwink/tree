@@ -10,14 +10,14 @@ use Iwink\Tree\TreeInterface;
  *
  * The result of this visitor can be used to reconstruct a tree using {@see TreeInterface::fromSerialized()}.
  *
- * @since $ver$
+ * @since 1.0.0
  */
 class SerializerVisitor extends ValueVisitor
 {
     /**
      * The output of each node is: ['id' => <ID>, 'value' => <VALUE>, 'children' => [<CHILD_ID>, <CHILD_ID>, ...]]
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     protected function doVisit(NodeInterface $node)
     {

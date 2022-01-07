@@ -14,20 +14,20 @@ use Iwink\Tree\Visitor\VisitorInterface;
 
 /**
  * A traversable tree.
- * @since $ver$
+ * @since 1.0.0
  */
 final class Tree implements TreeInterface
 {
     /**
      * The root node of the tree.
-     * @since $ver$
+     * @since 1.0.0
      * @var NodeInterface
      */
     private NodeInterface $root;
 
     /**
      * Creates a new tree.
-     * @since $ver$
+     * @since 1.0.0
      * @param NodeInterface $root The root node of the tree.
      */
     public function __construct(NodeInterface $root)
@@ -37,7 +37,7 @@ final class Tree implements TreeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function getRoot(): NodeInterface
     {
@@ -46,7 +46,7 @@ final class Tree implements TreeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function clone(): TreeInterface
     {
@@ -55,7 +55,7 @@ final class Tree implements TreeInterface
 
     /**
      * Clones the tree.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function __clone()
     {
@@ -64,7 +64,7 @@ final class Tree implements TreeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function visitPreOrder(VisitorInterface ...$visitors): void
     {
@@ -73,7 +73,7 @@ final class Tree implements TreeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function visitInOrder(VisitorInterface ...$visitors): void
     {
@@ -82,7 +82,7 @@ final class Tree implements TreeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function visitPostOrder(VisitorInterface ...$visitors): void
     {
@@ -91,7 +91,7 @@ final class Tree implements TreeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function visitLevelOrder(VisitorInterface ...$visitors): void
     {
@@ -100,7 +100,7 @@ final class Tree implements TreeInterface
 
     /**
      * Helper method to visit all nodes.
-     * @since $ver$
+     * @since 1.0.0
      * @param TraverserInterface $traverser The traverser.
      * @param VisitorInterface ...$visitors The visitors.
      */
@@ -121,7 +121,7 @@ final class Tree implements TreeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public static function fromSerialized(
         array $serialized,
@@ -160,7 +160,7 @@ final class Tree implements TreeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function serialize(?callable $converter = null): array
     {

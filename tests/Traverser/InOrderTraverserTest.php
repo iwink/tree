@@ -7,13 +7,13 @@ use Iwink\Tree\Visitor\ValueVisitor;
 
 /**
  * Unit tests for {@see InOrderTraverser}
- * @since $ver$
+ * @since 1.0.0
  */
 class InOrderTraverserTest extends TraverserTest
 {
     /**
      * Test case for {@see InOrderTraverser::traverse()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testTraverse(): void
     {

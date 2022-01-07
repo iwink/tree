@@ -8,27 +8,27 @@ use Iwink\Tree\Visitor\VisitorInterface;
 
 /**
  * A node in a tree.
- * @since $ver$
+ * @since 1.0.0
  */
 final class Node implements NodeInterface
 {
     /**
      * Stores information regarding about the structure.
-     * @since $ver$
+     * @since 1.0.0
      * @var StorageInterface
      */
     protected StorageInterface $storage;
 
     /**
      * The value of this node.
-     * @since $ver$
+     * @since 1.0.0
      * @var mixed
      */
     private $value;
 
     /**
      * Creates a new node.
-     * @since $ver$
+     * @since 1.0.0
      * @param mixed $value Optional value of the node.
      * @param null|NodeInterface $parent Optional parent of the node.
      */
@@ -42,7 +42,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function setValue($value): self
     {
@@ -53,7 +53,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function getValue()
     {
@@ -62,7 +62,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      * @return \Generator
      */
     public function getChildren(): iterable
@@ -72,7 +72,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function addChild(NodeInterface ...$nodes): self
     {
@@ -89,7 +89,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function setChild(int $position, NodeInterface $node): self
     {
@@ -100,7 +100,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function removeChild(NodeInterface ...$nodes): self
     {
@@ -118,7 +118,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function deleteChild(int $position): self
     {
@@ -129,7 +129,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function setParent(?NodeInterface $parent): self
     {
@@ -152,7 +152,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function getParent(): ?NodeInterface
     {
@@ -161,7 +161,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      * @return \Generator
      */
     public function getAncestors(): iterable
@@ -174,7 +174,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      * @return \Generator
      */
     public function getSiblings(): iterable
@@ -195,7 +195,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function isRoot(): bool
     {
@@ -204,7 +204,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function isLeaf(): bool
     {
@@ -213,7 +213,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function getDepth(): int
     {
@@ -222,7 +222,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function getHeight(): int
     {
@@ -236,7 +236,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function accept(VisitorInterface $visitor): void
     {
@@ -245,7 +245,7 @@ final class Node implements NodeInterface
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     public function count(): int
     {
@@ -254,7 +254,7 @@ final class Node implements NodeInterface
 
     /**
      * Clones the node.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function __clone()
     {

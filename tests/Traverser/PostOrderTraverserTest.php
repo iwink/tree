@@ -6,13 +6,13 @@ use Iwink\Tree\Visitor\ValueVisitor;
 
 /**
  * Unit tests for {@see PostOrderTraverser}.
- * @since $ver$
+ * @since 1.0.0
  */
 class PostOrderTraverserTest extends TraverserTest
 {
     /**
      * Test case for {@see PostOrderTraverser::traverse()}.
-     * @since $ver$
+     * @since 1.0.0
      */
     public function testTraverse(): void
     {

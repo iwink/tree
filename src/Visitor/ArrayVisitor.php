@@ -11,20 +11,20 @@ use Iwink\Tree\TreeInterface;
  * An array visitor converts a {@see TreeInterface} to an array by performing an operation on each node and pushing the
  * result to an array.
  *
- * @since $ver$
+ * @since 1.0.0
  */
 abstract class ArrayVisitor extends Visitor
 {
     /**
      * The results of the visited nodes.
-     * @since $ver$
+     * @since 1.0.0
      * @var array
      */
     protected array $result = [];
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     final public function visit(NodeInterface $node): void
     {
@@ -33,7 +33,7 @@ abstract class ArrayVisitor extends Visitor
 
     /**
      * Performs an operation on the node and returns the result.
-     * @since $ver$
+     * @since 1.0.0
      * @param NodeInterface $node The node.
      * @return mixed The result of the operation.
      */
@@ -41,7 +41,7 @@ abstract class ArrayVisitor extends Visitor
 
     /**
      * Returns the result of the visited nodes.
-     * @since $ver$
+     * @since 1.0.0
      * @return \Generator The result.
      */
     final public function getResult(): iterable
@@ -51,7 +51,7 @@ abstract class ArrayVisitor extends Visitor
 
     /**
      * Returns the result as an array.
-     * @since $ver$
+     * @since 1.0.0
      * @return array The result.
      */
     final public function asArray(): array
@@ -64,7 +64,7 @@ abstract class ArrayVisitor extends Visitor
      *
      * Empties out the results array.
      *
-     * @since $ver$
+     * @since 1.0.0
      */
     public function beforeVisiting(): void
     {

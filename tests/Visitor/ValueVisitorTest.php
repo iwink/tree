@@ -7,13 +7,13 @@ use Iwink\Tree\Visitor\ValueVisitor;
 
 /**
  * Unit tests for {@see ValueVisitor}.
- * @since $ver$
+ * @since 1.0.0
  */
 class ValueVisitorTest extends VisitorTest
 {
     /**
      * Data provider for {@see ValueVisitor}.
-     * @since $ver$
+     * @since 1.0.0
      * @return mixed[] The data set.
      */
     public function visitorDataProvider(): array
@@ -26,7 +26,7 @@ class ValueVisitorTest extends VisitorTest
 
     /**
      * Test case for {@see ValueVisitor}.
-     * @since $ver$
+     * @since 1.0.0
      * @param callable|null $converter Optional converter.
      * @param string $method The method to traverse the tree with.
      * @param mixed[] $expected The expected result.

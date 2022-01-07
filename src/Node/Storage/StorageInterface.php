@@ -6,20 +6,20 @@ use Iwink\Tree\Node\NodeInterface;
 
 /**
  * A storage for nodes.
- * @since $ver$
+ * @since 1.0.0
  */
 interface StorageInterface extends \Countable
 {
     /**
      * Returns all children.
-     * @since $ver$
+     * @since 1.0.0
      * @return NodeInterface[] The children.
      */
     public function all(): iterable;
 
     /**
      * Pushes 1 or more children to the storage.
-     * @since $ver$
+     * @since 1.0.0
      * @param NodeInterface ...$children The children.
      * @return $this The storage.
      */
@@ -28,7 +28,7 @@ interface StorageInterface extends \Countable
     /**
      * Stores a child at a position. If position is negative, it's calculated from the end. Higher ordered children
      * (including the one at position) are moved to the right.
-     * @since $ver$
+     * @since 1.0.0
      * @param int $position The position.
      * @param NodeInterface $child The child.
      * @return $this The storage.
@@ -37,7 +37,7 @@ interface StorageInterface extends \Countable
 
     /**
      * Returns the child at the position. If position is negative, it's calculated from the end.
-     * @since $ver$
+     * @since 1.0.0
      * @param int $position The position.
      * @return NodeInterface|null The child.
      */
@@ -46,7 +46,7 @@ interface StorageInterface extends \Countable
     /**
      * Deletes a child at a position. If position is negative, it's calculated from the end. Higher ordered children
      * are moved to the left.
-     * @since $ver$
+     * @since 1.0.0
      * @param int $position The position.
      * @return $this The storage.
      */
@@ -54,7 +54,7 @@ interface StorageInterface extends \Countable
 
     /**
      * Removes 1 or more children.
-     * @since $ver$
+     * @since 1.0.0
      * @param NodeInterface ...$children The children.
      * @return $this The storage.
      */
@@ -62,7 +62,7 @@ interface StorageInterface extends \Countable
 
     /**
      * Sets the parent.
-     * @since $ver$
+     * @since 1.0.0
      * @param NodeInterface|null $parent The parent.
      * @return $this The node.
      */
@@ -70,7 +70,7 @@ interface StorageInterface extends \Countable
 
     /**
      * Returns the parent.
-     * @since $ver$
+     * @since 1.0.0
      * @return NodeInterface|null The parent.
      */
     public function getParent(): ?NodeInterface;

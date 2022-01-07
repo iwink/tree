@@ -10,13 +10,13 @@ use Iwink\Tree\TreeInterface;
 
 /**
  * Base test case.
- * @since $ver$
+ * @since 1.0.0
  */
 abstract class TraverserTest extends TestCase
 {
     /**
      * Returns nodes for a tree.
-     * @since $ver$
+     * @since 1.0.0
      * @return NodeInterface[] The nodes indexed on value.
      */
     protected function getNodes(): array
@@ -42,7 +42,7 @@ abstract class TraverserTest extends TestCase
      *    /  \
      *  C     E
      *
-     * @since $ver$
+     * @since 1.0.0
      * @return TreeInterface The tree.
      */
     protected function getTree(): TreeInterface

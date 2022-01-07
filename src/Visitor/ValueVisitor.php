@@ -6,20 +6,20 @@ use Iwink\Tree\Node\NodeInterface;
 
 /**
  * A visitor that returns an array containing the values of each node.
- * @since $ver$
+ * @since 1.0.0
  */
 class ValueVisitor extends ArrayVisitor
 {
     /**
      * Converter for the node's value.
-     * @since $ver$
+     * @since 1.0.0
      * @var callable|null
      */
     private $converter;
 
     /**
      * Creates a new visitor.
-     * @since $ver$
+     * @since 1.0.0
      * @param callable|null $converter Optional converter for the node's value.
      */
     public function __construct(?callable $converter = null)
@@ -29,7 +29,7 @@ class ValueVisitor extends ArrayVisitor
 
     /**
      * @inheritDoc
-     * @since $ver$
+     * @since 1.0.0
      */
     protected function doVisit(NodeInterface $node)
     {
