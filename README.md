@@ -48,14 +48,14 @@ use Iwink\Tree\Tree;
 use Iwink\Tree\Visitor\ValueVisitor;
 
 $nodes = [];
-foreach (range('A', 'K') as $value) {
+foreach (range('A', 'I') as $value) {
 	$nodes[$value] = new Node($value);
 }
 
 $nodes['D']->addChild($nodes['C'], $nodes['E']);
-$nodes['G']->addChild($nodes['I'], $nodes['J'], $nodes['K']);
+$nodes['H']->addChild($nodes['G'], $nodes['I'], $nodes['J']);
 $nodes['B']->addChild($nodes['A'], $nodes['D']);
-$nodes['F']->addChild($nodes['B'], $nodes['G']);
+$nodes['F']->addChild($nodes['B'], $nodes['H']);
 
 $tree = new Tree($nodes['F']);
 
@@ -66,14 +66,14 @@ A visual representation of this tree looks like this:
 ```mermaid
 graph TD;
 F-->B;
-F-->G;
+F-->H;
 B-->A;
 B-->D;
 D-->C;
 D-->E;
-G-->I;
-G-->J;
-G-->K;
+H-->G;
+H-->I;
+H-->J;
 ```
 
 ### Traversing the tree
@@ -86,16 +86,16 @@ Now we can traverse this tree and apply a visitor:
 $visitor = new ValueVisitor('strtolower'); // Convert the node's value to lowercase
 
 $tree->visitPreOrder($visitor);
-var_dump(iterator_to_array($visitor->getResult())); // ['f', 'b', 'a', 'd', 'c', 'e', 'g', 'i', 'j', 'k']
+var_dump(iterator_to_array($visitor->getResult())); // ['f', 'b', 'a', 'd', 'c', 'e', 'h', 'g', 'i', 'j']
 
 $tree->visitInOrder($visitor);
-var_dump(iterator_to_array($visitor->getResult())); // ['a', 'b', 'c', 'd', 'e', 'f', ''i', 'g', 'j', 'k']
+var_dump(iterator_to_array($visitor->getResult())); // ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i' 'j']
 
 $tree->visitPostOrder($visitor);
-var_dump(iterator_to_array($visitor->getResult())); // ['a', 'c', 'e', 'd', 'b', 'i', 'j', 'k', 'g', 'f']
+var_dump(iterator_to_array($visitor->getResult())); // ['a', 'c', 'e', 'd', 'b', 'g', 'i', 'j', 'h', 'f']
 
 $tree->visitLevelOrder($visitor);
-var_dump(iterator_to_array($visitor->getResult())); // ['f', 'b', 'g', 'a', 'd', 'i', 'j', 'k', 'c', 'e']
+var_dump(iterator_to_array($visitor->getResult())); // ['f', 'b', 'h', 'a', 'd', 'g', 'i', 'j', 'c', 'e']
 
 ```
 

@@ -20,7 +20,7 @@ abstract class TraverserTest extends TestCase {
 	 */
 	protected function getNodes(): array {
 		$nodes = [];
-		foreach (range('A', 'K') as $value) {
+		foreach (range('A', 'J') as $value) {
 			$nodes[$value] = new Node($value);
 		}
 
