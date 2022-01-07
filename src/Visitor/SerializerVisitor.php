@@ -12,17 +12,19 @@ use Iwink\Tree\TreeInterface;
  *
  * @since $ver$
  */
-class SerializerVisitor extends ValueVisitor {
-	/**
-	 * The output of each node is: ['id' => <ID>, 'value' => <VALUE>, 'children' => [<CHILD_ID>, <CHILD_ID>, ...]]
-	 * @inheritDoc
-	 * @since $ver$
-	 */
-	protected function doVisit(NodeInterface $node) {
-		return [
-			'id' => spl_object_hash($node),
-			'value' => parent::doVisit($node),
-			'children' => array_map('spl_object_hash', iterator_to_array($node->getChildren())),
-		];
-	}
+class SerializerVisitor extends ValueVisitor
+{
+    /**
+     * The output of each node is: ['id' => <ID>, 'value' => <VALUE>, 'children' => [<CHILD_ID>, <CHILD_ID>, ...]]
+     * @inheritDoc
+     * @since $ver$
+     */
+    protected function doVisit(NodeInterface $node)
+    {
+        return [
+            'id' => spl_object_hash($node),
+            'value' => parent::doVisit($node),
+            'children' => array_map('spl_object_hash', iterator_to_array($node->getChildren())),
+        ];
+    }
 }

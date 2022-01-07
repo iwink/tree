@@ -63,17 +63,14 @@ $tree = new Tree($nodes['F']);
 
 A visual representation of this tree looks like this:
 
-```mermaid
-graph TD;
-F-->B;
-F-->H;
-B-->A;
-B-->D;
-D-->C;
-D-->E;
-H-->G;
-H-->I;
-H-->J;
+```md
+         F
+      /      \
+     B        H
+   /  \     / | \
+  A    D   G  I  J
+     /  \
+   C     E
 ```
 
 ### Traversing the tree
