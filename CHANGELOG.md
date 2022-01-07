@@ -6,4 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-[Unreleased]: https://github.com/iwink/tree
+## [1.0.0] - 2022-01-07
+### Added
+- Initial release
+
+[Unreleased]: https://github.com/iwink/tree/compare/v1.0.0...main
+[1.0.0]: https://github.com/iwink/tree/releases/tag/v1.0.0
