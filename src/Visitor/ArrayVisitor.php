@@ -26,7 +26,7 @@ abstract class ArrayVisitor extends Visitor
      * @inheritDoc
      * @since 1.0.0
      */
-    final public function visit(NodeInterface $node): void
+    public function visit(NodeInterface $node): void
     {
         $this->result[] = $this->doVisit($node);
     }
@@ -44,7 +44,7 @@ abstract class ArrayVisitor extends Visitor
      * @since 1.0.0
      * @return \Generator The result.
      */
-    final public function getResult(): iterable
+    public function getResult(): iterable
     {
         yield from $this->result;
     }
@@ -54,7 +54,7 @@ abstract class ArrayVisitor extends Visitor
      * @since 1.0.0
      * @return array The result.
      */
-    final public function asArray(): array
+    public function asArray(): array
     {
         return $this->result;
     }
